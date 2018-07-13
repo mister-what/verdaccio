@@ -8,6 +8,8 @@ import URL from 'url';
 import asciidoctor from 'asciidoctor.js';
 import createError from 'http-errors';
 import marked from 'marked';
+import Prism from 'prismjs';
+import loadLanguages from 'prismjs/components/index';
 
 import {HTTP_STATUS, API_ERROR, DEFAULT_PORT, DEFAULT_DOMAIN} from './constants';
 import {generateGravatarUrl} from '../utils/user';
@@ -19,6 +21,19 @@ import type {StringValue} from '../../types';
 const Logger = require('./logger');
 
 export const DIST_TAGS = 'dist-tags';
+if (process.env.NODE_ENV !== 'test') loadLanguages();
+
+marked.setOptions({
+  highlight: (code: string, lang?: string): string => {
+    const lng = (lang || '').toString().toLowerCase();
+    const highlighted = Prism.languages[lng] && Prism.highlight(code, Prism.languages[lng]);
+    if (highlighted) {
+      return highlighted;
+    }
+    return code;
+  },
+  gfm: true,
+});
 
 /**
  * Validate a package.
@@ -243,7 +258,7 @@ function parse_address(urlAddress: any) {
 function semverSort(listVersions: Array<string>) {
   return listVersions.filter(function(x) {
       if (!semver.parse(x, true)) {
-        Logger.logger.warn( {ver: x}, 'ignoring bad version @{ver}' );
+        Logger.logger.warn({ver: x}, 'ignoring bad version @{ver}');
         return false;
       }
       return true;
@@ -262,7 +277,7 @@ export function normalizeDistTags(pkg: Package) {
     // overwrite latest with highest known version based on semver sort
     sorted = semverSort(Object.keys(pkg.versions));
     if (sorted && sorted.length) {
-        pkg[DIST_TAGS].latest = sorted.pop();
+      pkg[DIST_TAGS].latest = sorted.pop();
     }
   }
 
@@ -273,13 +288,13 @@ export function normalizeDistTags(pkg: Package) {
         // $FlowFixMe
         sorted = semverSort(pkg[DIST_TAGS][tag]);
         if (sorted.length) {
-            // use highest version based on semver sort
-            pkg[DIST_TAGS][tag] = sorted.pop();
+          // use highest version based on semver sort
+          pkg[DIST_TAGS][tag] = sorted.pop();
         }
       } else {
         delete pkg[DIST_TAGS][tag];
       }
-    } else if (_.isString(pkg[DIST_TAGS][tag] )) {
+    } else if (_.isString(pkg[DIST_TAGS][tag])) {
       if (!semver.parse(pkg[DIST_TAGS][tag], true)) {
         // if the version is invalid, delete the dist-tag entry
         delete pkg[DIST_TAGS][tag];
@@ -292,11 +307,11 @@ const parseIntervalTable = {
   '': 1000,
   ms: 1,
   s: 1000,
-  m: 60*1000,
-  h: 60*60*1000,
+  m: 60 * 1000,
+  h: 60 * 60 * 1000,
   d: 86400000,
-  w: 7*86400000,
-  M: 30*86400000,
+  w: 7 * 86400000,
+  M: 30 * 86400000,
   y: 365*86400000,
 };
 
@@ -428,13 +443,13 @@ function addGravatarSupport(pkgInfo: any) {
 
   if (_.get(pkgInfo, 'latest.contributors.length', 0) > 0) {
     pkgInfo.latest.contributors = _.map(pkgInfo.latest.contributors, (contributor) => {
-        if (_.isString(contributor.email)) {
-          contributor.avatar = generateGravatarUrl(contributor.email);
-        } else {
-          contributor.avatar = generateGravatarUrl();
-        }
+      if (_.isString(contributor.email)) {
+        contributor.avatar = generateGravatarUrl(contributor.email);
+      } else {
+        contributor.avatar = generateGravatarUrl();
+      }
 
-        return contributor;
+      return contributor;
       }
     );
   }
