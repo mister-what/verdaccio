@@ -2,7 +2,8 @@
   "plugins": [
     "react",
     "flowtype",
-    "jest"
+    "jest",
+    "babel"
   ],
   "extends": [
     "eslint:recommended",
@@ -30,6 +31,8 @@
     "__APP_VERSION__": true
   },
   "rules": {
+    "no-invalid-this": 0,
+    "babel/no-invalid-this": 2,
     "no-useless-escape": 2,
     "handle-callback-err": 2,
     "no-fallthrough": 2,
