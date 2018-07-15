@@ -1,11 +1,11 @@
 // @flow
 import assert from 'assert';
-import {generateGravatarUrl, GRAVATAR_DEFAULT}  from '../../../src/utils/user';
-import {spliceURL}  from '../../../src/utils/string';
+import {generateGravatarUrl, GRAVATAR_DEFAULT} from '../../../src/utils/user';
+import {spliceURL} from '../../../src/utils/string';
 import Package from "../../../src/webui/src/components/Package/index";
-import {validateName as validate, convertDistRemoteToLocalTarballUrls, parseReadme}  from '../../../src/lib/utils';
+import {validateName as validate, convertDistRemoteToLocalTarballUrls, parseReadme} from '../../../src/lib/utils';
 import Logger, {setup} from '../../../src/lib/logger';
-import { readFile } from '../../functional/lib/test.utils';
+import {readFile} from '../../functional/lib/test.utils';
 
 const readmeFile = (fileName: string = 'markdown.md') => readFile(`../../unit/partials/readme/${fileName}`);
 
@@ -28,57 +28,57 @@ describe('Utilities', () => {
   });
 
   describe('User utilities', () => {
-      test('should generate gravatar url with email', () => {
-        const gravatarUrl: string = generateGravatarUrl('user@verdaccio.org');
+    test('should generate gravatar url with email', () => {
+      const gravatarUrl: string = generateGravatarUrl('user@verdaccio.org');
 
-        expect(gravatarUrl).toMatch('https://www.gravatar.com/avatar/');
-        expect(gravatarUrl).not.toMatch('000000000');
-      });
+      expect(gravatarUrl).toMatch('https://www.gravatar.com/avatar/');
+      expect(gravatarUrl).not.toMatch('000000000');
+    });
 
-      test('should generate generic gravatar url', () => {
-        const gravatarUrl: string = generateGravatarUrl();
+    test('should generate generic gravatar url', () => {
+      const gravatarUrl: string = generateGravatarUrl();
 
-        expect(gravatarUrl).toMatch(GRAVATAR_DEFAULT);
-      });
+      expect(gravatarUrl).toMatch(GRAVATAR_DEFAULT);
+    });
   });
 
   describe('Validations', () => {
     test('good ones', () => {
-      assert( validate('verdaccio') );
-      assert( validate('some.weird.package-zzz') );
-      assert( validate('old-package@0.1.2.tgz') );
+      assert(validate('verdaccio'));
+      assert(validate('some.weird.package-zzz'));
+      assert(validate('old-package@0.1.2.tgz'));
     });
 
     test('uppercase', () => {
-      assert( validate('EVE') );
-      assert( validate('JSONStream') );
+      assert(validate('EVE'));
+      assert(validate('JSONStream'));
     });
 
     test('no package.json', () => {
-      assert( !validate('package.json') );
+      assert(!validate('package.json'));
     });
 
     test('no path seps', () => {
-      assert( !validate('some/thing') );
-      assert( !validate('some\\thing') );
+      assert(!validate('some/thing'));
+      assert(!validate('some\\thing'));
     });
 
     test('no hidden', () => {
-      assert( !validate('.bin') );
+      assert(!validate('.bin'));
     });
 
     test('no reserved', () => {
-      assert( !validate('favicon.ico') );
-      assert( !validate('node_modules') );
-      assert( !validate('__proto__') );
+      assert(!validate('favicon.ico'));
+      assert(!validate('node_modules'));
+      assert(!validate('__proto__'));
     });
 
     test('other', () => {
-      assert( !validate('pk g') );
-      assert( !validate('pk\tg') );
-      assert( !validate('pk%20g') );
-      assert( !validate('pk+g') );
-      assert( !validate('pk:g') );
+      assert(!validate('pk g'));
+      assert(!validate('pk\tg'));
+      assert(!validate('pk%20g'));
+      assert(!validate('pk+g'));
+      assert(!validate('pk:g'));
     });
   });
 
@@ -108,7 +108,7 @@ describe('Utilities', () => {
         headers: {
           host,
         },
-        get: ()=> 'http',
+        get: () => 'http',
         protocol: 'http'
       }, '');
 
@@ -128,6 +128,25 @@ describe('Utilities', () => {
       expect(parseReadme('testPackage', String(readmeFile('ascii.adoc')))).toMatchSnapshot();
     });
 
+    test('should highlight code-blocks for known language', () => {
+      const markdown = `# markdown
+\`\`\`javascript
+  const someVariable = () => "some value";
+  var someNumber = 5;
+\`\`\``;
+
+      expect(parseReadme('testPackage', markdown)).toMatchSnapshot();
+    });
+    test('should not highlight code-blocks for unknown language', () => {
+      const markdown = `# markdown
+\`\`\`unknown-language
+  const someVariable = () => "some value";
+  var someNumber = 5;
+\`\`\``;
+
+      expect(parseReadme('testPackage', markdown)).toMatchSnapshot();
+    });
+
     test('should pass for conversion of non-ascii to markdown text', () => {
       const simpleText = 'simple text';
       const randomText = '%%%%%**##==';
@@ -144,7 +163,7 @@ describe('Utilities', () => {
 
     test('should show error for no readme data', () => {
       const noData = '';
-      const spy = jest.spyOn(Logger.logger, 'error')
+      const spy = jest.spyOn(Logger.logger, 'error');
       expect(parseReadme('testPackage', noData))
         .toEqual('<p>ERROR: No README data found!</p>\n');
       expect(spy).toHaveBeenCalledWith({'packageName': 'testPackage'}, '@{packageName}: No readme found');
