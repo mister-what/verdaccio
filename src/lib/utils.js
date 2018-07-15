@@ -23,18 +23,6 @@ const Logger = require('./logger');
 export const DIST_TAGS = 'dist-tags';
 if (process.env.NODE_ENV !== 'test') loadLanguages();
 
-marked.setOptions({
-  highlight: (code: string, lang?: string): string => {
-    const lng = (lang || '').toString().toLowerCase();
-    const highlighted = Prism.languages[lng] && Prism.highlight(code, Prism.languages[lng]);
-    if (highlighted) {
-      return highlighted;
-    }
-    return code;
-  },
-  gfm: true,
-});
-
 /**
  * Validate a package.
  * @return {Boolean} whether the package is valid or not
@@ -473,7 +461,17 @@ function parseReadme(packageName: string, readme: string): string {
   }
 
   if (readme) {
-    return marked(readme);
+    return marked(readme, {
+      highlight: (code: string, lang?: string): string => {
+        const lng = (lang || '').toString().toLowerCase();
+        const highlighted = Prism.languages[lng] && Prism.highlight(code, Prism.languages[lng]);
+        if (highlighted) {
+          return highlighted;
+        }
+        return code;
+      },
+      gfm: true,
+    });
   }
 
   // logs readme not found error
