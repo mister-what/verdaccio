@@ -128,6 +128,25 @@ describe('Utilities', () => {
       expect(parseReadme('testPackage', String(readmeFile('ascii.adoc')))).toMatchSnapshot();
     });
 
+    test('should highlight code-blocks for known language', () => {
+      const markdown = `# markdown
+\`\`\`javascript
+  const someVariable = () => "some value";
+  var someNumber = 5;
+\`\`\``;
+
+      expect(parseReadme('testPackage', markdown)).toMatchSnapshot();
+    });
+    test('should not highlight code-blocks for unknown language', () => {
+      const markdown = `# markdown
+\`\`\`unknown-language
+  const someVariable = () => "some value";
+  var someNumber = 5;
+\`\`\``;
+
+      expect(parseReadme('testPackage', markdown)).toMatchSnapshot();
+    });
+
     test('should pass for conversion of non-ascii to markdown text', () => {
       const simpleText = 'simple text';
       const randomText = '%%%%%**##==';

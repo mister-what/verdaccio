@@ -1,3 +1,1153 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<PackageSidebar /> : <Maintainers /> should match with the props 1`] = `"<div class=\\"module maintainersModule\\"><h2 class=\\"moduleTitle\\">Maintainers</h2><div><ul class=\\"maintainer-author\\"><div class=\\"maintainer\\" title=\\"User NPM\\"><img src=\\"https://www.gravatar.com/avatar/a5a236ba477ee98908600c40cda74f4a\\" alt=\\"Author User NPM's avatar\\" title=\\"Author User NPM's avatar\\"><span class=\\"maintainer-name\\">User NPM</span></div><div class=\\"maintainer\\" title=\\"030\\"><img src=\\"https://www.gravatar.com/avatar/4ef03c2bf8d8689527903212d96fb45b\\" alt=\\"Contributors 030's avatar\\" title=\\"Contributors 030's avatar\\"><span class=\\"maintainer-name\\">030</span></div><div class=\\"maintainer\\" title=\\"Alex Vernacchia\\"><img src=\\"https://www.gravatar.com/avatar/06975001f7f2be7052bcf978700c6112\\" alt=\\"Contributors Alex Vernacchia's avatar\\" title=\\"Contributors Alex Vernacchia's avatar\\"><span class=\\"maintainer-name\\">Alex Vernacchia</span></div><div class=\\"maintainer\\" title=\\"Alexander Makarenko\\"><img src=\\"https://www.gravatar.com/avatar/d9acfc4ed4e49a436738ff26a722dce4\\" alt=\\"Contributors Alexander Makarenko's avatar\\" title=\\"Contributors Alexander Makarenko's avatar\\"><span class=\\"maintainer-name\\">Alexander Makarenko</span></div><div class=\\"maintainer\\" title=\\"Alexandre-io\\"><img src=\\"https://www.gravatar.com/avatar/2e095c7cfd278f72825d0fed6e12e3b1\\" alt=\\"Contributors Alexandre-io's avatar\\" title=\\"Contributors Alexandre-io's avatar\\"><span class=\\"maintainer-name\\">Alexandre-io</span></div><div class=\\"maintainer\\" title=\\"Aram Drevekenin\\"><img src=\\"https://www.gravatar.com/avatar/371edff6d79c39bb9e36bde39d41a4b0\\" alt=\\"Contributors Aram Drevekenin's avatar\\" title=\\"Contributors Aram Drevekenin's avatar\\"><span class=\\"maintainer-name\\">Aram Drevekenin</span></div></ul><button class=\\"showAllContributors\\" title=\\"Current list only show the author and first 5 contributors unique by name\\">Show all contributor</button></div></div>"`;
+exports[`<PackageSidebar /> : <Maintainers /> should click on handleShowAllContributors 1`] = `
+<div
+  class="module maintainersModule"
+>
+  <h2
+    class="moduleTitle"
+  >
+    Maintainers (68)
+  </h2>
+  <div>
+    <ul
+      class="maintainer-author"
+    >
+      <div
+        class="maintainer"
+        title="User NPM"
+      >
+        <img
+          alt="Author User NPM's avatar"
+          src="https://www.gravatar.com/avatar/a5a236ba477ee98908600c40cda74f4a"
+          title="Author User NPM's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          User NPM
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="030"
+      >
+        <img
+          alt="Contributors 030's avatar"
+          src="https://www.gravatar.com/avatar/4ef03c2bf8d8689527903212d96fb45b"
+          title="Contributors 030's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          030
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alex Vernacchia"
+      >
+        <img
+          alt="Contributors Alex Vernacchia's avatar"
+          src="https://www.gravatar.com/avatar/06975001f7f2be7052bcf978700c6112"
+          title="Contributors Alex Vernacchia's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alex Vernacchia
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alexander Makarenko"
+      >
+        <img
+          alt="Contributors Alexander Makarenko's avatar"
+          src="https://www.gravatar.com/avatar/d9acfc4ed4e49a436738ff26a722dce4"
+          title="Contributors Alexander Makarenko's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alexander Makarenko
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alexandre-io"
+      >
+        <img
+          alt="Contributors Alexandre-io's avatar"
+          src="https://www.gravatar.com/avatar/2e095c7cfd278f72825d0fed6e12e3b1"
+          title="Contributors Alexandre-io's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alexandre-io
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Aram Drevekenin"
+      >
+        <img
+          alt="Contributors Aram Drevekenin's avatar"
+          src="https://www.gravatar.com/avatar/371edff6d79c39bb9e36bde39d41a4b0"
+          title="Contributors Aram Drevekenin's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Aram Drevekenin
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Bart Dubois"
+      >
+        <img
+          alt="Contributors Bart Dubois's avatar"
+          src="https://www.gravatar.com/avatar/4acf72b14fcb459286c988c4523bafc8"
+          title="Contributors Bart Dubois's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Bart Dubois
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Barthélemy Vessemont"
+      >
+        <img
+          alt="Contributors Barthélemy Vessemont's avatar"
+          src="https://www.gravatar.com/avatar/322cd2fad528a55c4351ec76d85ef525"
+          title="Contributors Barthélemy Vessemont's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Barthélemy Vessemont
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Brandon Nicholls"
+      >
+        <img
+          alt="Contributors Brandon Nicholls's avatar"
+          src="https://www.gravatar.com/avatar/2d3b462f08f214ed459967aa7ef206f7"
+          title="Contributors Brandon Nicholls's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Brandon Nicholls
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Bren Norris"
+      >
+        <img
+          alt="Contributors Bren Norris's avatar"
+          src="https://www.gravatar.com/avatar/465a42204a22efada0f15b46a7cdad3a"
+          title="Contributors Bren Norris's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Bren Norris
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Brett Trotter"
+      >
+        <img
+          alt="Contributors Brett Trotter's avatar"
+          src="https://www.gravatar.com/avatar/27a54519dcbe64c6d705f3cc4854595a"
+          title="Contributors Brett Trotter's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Brett Trotter
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Brian Peacock"
+      >
+        <img
+          alt="Contributors Brian Peacock's avatar"
+          src="https://www.gravatar.com/avatar/3dd3d627330e7e048c13a7480f19842e"
+          title="Contributors Brian Peacock's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Brian Peacock
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Cedric Darne"
+      >
+        <img
+          alt="Contributors Cedric Darne's avatar"
+          src="https://www.gravatar.com/avatar/0a617cebc6539940d7956c86e86c72a6"
+          title="Contributors Cedric Darne's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Cedric Darne
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Chad Killingsworth"
+      >
+        <img
+          alt="Contributors Chad Killingsworth's avatar"
+          src="https://www.gravatar.com/avatar/a5825b2d69311e559e28a535e5f0d483"
+          title="Contributors Chad Killingsworth's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Chad Killingsworth
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Chris Breneman"
+      >
+        <img
+          alt="Contributors Chris Breneman's avatar"
+          src="https://www.gravatar.com/avatar/3c5c3edef955c93edac672cbad04d7cd"
+          title="Contributors Chris Breneman's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Chris Breneman
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="cklein"
+      >
+        <img
+          alt="Contributors cklein's avatar"
+          src="https://www.gravatar.com/avatar/f8288370380881cf3afc5a92a63d652d"
+          title="Contributors cklein's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          cklein
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Cody Droz"
+      >
+        <img
+          alt="Contributors Cody Droz's avatar"
+          src="https://www.gravatar.com/avatar/b762ce4d14acfece36e783b1592d882b"
+          title="Contributors Cody Droz's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Cody Droz
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Daniel Rodríguez Rivero"
+      >
+        <img
+          alt="Contributors Daniel Rodríguez Rivero's avatar"
+          src="https://www.gravatar.com/avatar/ac7f548c31e8a002cfa41bd4c71e222d"
+          title="Contributors Daniel Rodríguez Rivero's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Daniel Rodríguez Rivero
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="danielo515"
+      >
+        <img
+          alt="Contributors danielo515's avatar"
+          src="https://www.gravatar.com/avatar/ac7f548c31e8a002cfa41bd4c71e222d"
+          title="Contributors danielo515's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          danielo515
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Denis Babineau"
+      >
+        <img
+          alt="Contributors Denis Babineau's avatar"
+          src="https://www.gravatar.com/avatar/ee5a522e067759ba0403824ecebeab4d"
+          title="Contributors Denis Babineau's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Denis Babineau
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Emmanuel Narh"
+      >
+        <img
+          alt="Contributors Emmanuel Narh's avatar"
+          src="https://www.gravatar.com/avatar/93a84a6120969fd181785ff9de834f0a"
+          title="Contributors Emmanuel Narh's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Emmanuel Narh
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Fabio Poloni"
+      >
+        <img
+          alt="Contributors Fabio Poloni's avatar"
+          src="https://www.gravatar.com/avatar/f9a05677360e5f52fcca6e1af9b0f2ee"
+          title="Contributors Fabio Poloni's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Fabio Poloni
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Facundo Chambó"
+      >
+        <img
+          alt="Contributors Facundo Chambó's avatar"
+          src="https://www.gravatar.com/avatar/ec9e7c590ba4081c25fcf197f90a4ea0"
+          title="Contributors Facundo Chambó's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Facundo Chambó
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Guilherme Bernal"
+      >
+        <img
+          alt="Contributors Guilherme Bernal's avatar"
+          src="https://www.gravatar.com/avatar/e5d55dcf2495618e8b9f8778f8353ee0"
+          title="Contributors Guilherme Bernal's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Guilherme Bernal
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Jakub Jirutka"
+      >
+        <img
+          alt="Contributors Jakub Jirutka's avatar"
+          src="https://www.gravatar.com/avatar/061bdb74aa4a543108658b277a257b4b"
+          title="Contributors Jakub Jirutka's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Jakub Jirutka
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="James Newell"
+      >
+        <img
+          alt="Contributors James Newell's avatar"
+          src="https://www.gravatar.com/avatar/825190aaae6ec7fd95085e1fb6f261d2"
+          title="Contributors James Newell's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          James Newell
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Jan Vansteenkiste"
+      >
+        <img
+          alt="Contributors Jan Vansteenkiste's avatar"
+          src="https://www.gravatar.com/avatar/41835625a324201c796a0a0cffe4796b"
+          title="Contributors Jan Vansteenkiste's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Jan Vansteenkiste
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Jannis Achstetter"
+      >
+        <img
+          alt="Contributors Jannis Achstetter's avatar"
+          src="https://www.gravatar.com/avatar/92d1cce007b032f4a63c6df764f18030"
+          title="Contributors Jannis Achstetter's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Jannis Achstetter
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Jeremy Moritz"
+      >
+        <img
+          alt="Contributors Jeremy Moritz's avatar"
+          src="https://www.gravatar.com/avatar/008127e8f10293f43e62de3b7b3520e1"
+          title="Contributors Jeremy Moritz's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Jeremy Moritz
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="jmwilkinson"
+      >
+        <img
+          alt="Contributors jmwilkinson's avatar"
+          src="https://www.gravatar.com/avatar/3b99683f0a4c26a8906ecbe7968a4ade"
+          title="Contributors jmwilkinson's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          jmwilkinson
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="John Gozde"
+      >
+        <img
+          alt="Contributors John Gozde's avatar"
+          src="https://www.gravatar.com/avatar/3e8927c60cb043a56fdd6531cfcaddbc"
+          title="Contributors John Gozde's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          John Gozde
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Jon de la Motte"
+      >
+        <img
+          alt="Contributors Jon de la Motte's avatar"
+          src="https://www.gravatar.com/avatar/126c1ea4fdb20bbb85c3ff735b7b0964"
+          title="Contributors Jon de la Motte's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Jon de la Motte
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="José De Paz"
+      >
+        <img
+          alt="Contributors José De Paz's avatar"
+          src="https://www.gravatar.com/avatar/2532122835f5ebf1642b707ae088c895"
+          title="Contributors José De Paz's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          José De Paz
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Joseph Gentle"
+      >
+        <img
+          alt="Contributors Joseph Gentle's avatar"
+          src="https://www.gravatar.com/avatar/484f0b8ba8b7cc43db0be8f910a91254"
+          title="Contributors Joseph Gentle's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Joseph Gentle
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Juan Carlos Picado"
+      >
+        <img
+          alt="Contributors Juan Carlos Picado's avatar"
+          src="https://www.gravatar.com/avatar/c676605ff39f9c7a43f5518a8ce54e12"
+          title="Contributors Juan Carlos Picado's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Juan Carlos Picado
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Kalman Speier"
+      >
+        <img
+          alt="Contributors Kalman Speier's avatar"
+          src="https://www.gravatar.com/avatar/272806ba17639e2fbf811e51eb8bfb99"
+          title="Contributors Kalman Speier's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Kalman Speier
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Keyvan Fatehi"
+      >
+        <img
+          alt="Contributors Keyvan Fatehi's avatar"
+          src="https://www.gravatar.com/avatar/22735d1ba5765955914eb2d597dfaab5"
+          title="Contributors Keyvan Fatehi's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Keyvan Fatehi
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Kody J. Peterson"
+      >
+        <img
+          alt="Contributors Kody J. Peterson's avatar"
+          src="https://www.gravatar.com/avatar/918a15afc52e9b0a67b2651191b23d04"
+          title="Contributors Kody J. Peterson's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Kody J. Peterson
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Madison Grubb"
+      >
+        <img
+          alt="Contributors Madison Grubb's avatar"
+          src="https://www.gravatar.com/avatar/73b84fdf661c11d48d3370bfa197162b"
+          title="Contributors Madison Grubb's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Madison Grubb
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Manuel de Brito Fontes"
+      >
+        <img
+          alt="Contributors Manuel de Brito Fontes's avatar"
+          src="https://www.gravatar.com/avatar/8798ca0a499428e5e8f25d3614ac8b6e"
+          title="Contributors Manuel de Brito Fontes's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Manuel de Brito Fontes
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Mark Doeswijk"
+      >
+        <img
+          alt="Contributors Mark Doeswijk's avatar"
+          src="https://www.gravatar.com/avatar/0d70ebd6c46dc01502bfab5f8c2d2bc5"
+          title="Contributors Mark Doeswijk's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Mark Doeswijk
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="maxlaverse"
+      >
+        <img
+          alt="Contributors maxlaverse's avatar"
+          src="https://www.gravatar.com/avatar/74324a2900906c45949a8c5cee6d0730"
+          title="Contributors maxlaverse's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          maxlaverse
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Meeeeow"
+      >
+        <img
+          alt="Contributors Meeeeow's avatar"
+          src="https://www.gravatar.com/avatar/baa061890d7b352ba121082272419a8a"
+          title="Contributors Meeeeow's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Meeeeow
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Michael Arnel"
+      >
+        <img
+          alt="Contributors Michael Arnel's avatar"
+          src="https://www.gravatar.com/avatar/5f9a5ed24c63609d52651258f6dd8c12"
+          title="Contributors Michael Arnel's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Michael Arnel
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Michael Crowe"
+      >
+        <img
+          alt="Contributors Michael Crowe's avatar"
+          src="https://www.gravatar.com/avatar/eec9ee62019852da28a3bc91c57907f9"
+          title="Contributors Michael Crowe's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Michael Crowe
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Miguel Mejias"
+      >
+        <img
+          alt="Contributors Miguel Mejias's avatar"
+          src="https://www.gravatar.com/avatar/7289a01fedfdb9ddf855ee4dd4d41ae2"
+          title="Contributors Miguel Mejias's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Miguel Mejias
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Miroslav Bajtoš"
+      >
+        <img
+          alt="Contributors Miroslav Bajtoš's avatar"
+          src="https://www.gravatar.com/avatar/b4d8831300713259f74aea79f842ca57"
+          title="Contributors Miroslav Bajtoš's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Miroslav Bajtoš
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Nate Ziarek"
+      >
+        <img
+          alt="Contributors Nate Ziarek's avatar"
+          src="https://www.gravatar.com/avatar/6442023756294fd43aa518bbe5cc6dcc"
+          title="Contributors Nate Ziarek's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Nate Ziarek
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Nick"
+      >
+        <img
+          alt="Contributors Nick's avatar"
+          src="https://www.gravatar.com/avatar/8a810f12c9624ea2092852fe7c19f1ee"
+          title="Contributors Nick's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Nick
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="nickname"
+      >
+        <img
+          alt="Contributors nickname's avatar"
+          src="https://www.gravatar.com/avatar/fba48015a688c38cc84e5b55b07858c0"
+          title="Contributors nickname's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          nickname
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Piotr Synowiec"
+      >
+        <img
+          alt="Contributors Piotr Synowiec's avatar"
+          src="https://www.gravatar.com/avatar/87028f33a3e1e5b4201c371abddf93e2"
+          title="Contributors Piotr Synowiec's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Piotr Synowiec
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Rafael Cesar"
+      >
+        <img
+          alt="Contributors Rafael Cesar's avatar"
+          src="https://www.gravatar.com/avatar/204ed93fa5be7e2f9f299ad8bca6431f"
+          title="Contributors Rafael Cesar's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Rafael Cesar
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Robert Ewald"
+      >
+        <img
+          alt="Contributors Robert Ewald's avatar"
+          src="https://www.gravatar.com/avatar/ec2166ce419f78fb354f128b01a4a44d"
+          title="Contributors Robert Ewald's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Robert Ewald
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Robert Groh"
+      >
+        <img
+          alt="Contributors Robert Groh's avatar"
+          src="https://www.gravatar.com/avatar/565ccb5374a3e0e31a75f11da2eb57aa"
+          title="Contributors Robert Groh's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Robert Groh
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Robin Persson"
+      >
+        <img
+          alt="Contributors Robin Persson's avatar"
+          src="https://www.gravatar.com/avatar/99da46e4d59664134b176869340f464b"
+          title="Contributors Robin Persson's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Robin Persson
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Romain Lai-King"
+      >
+        <img
+          alt="Contributors Romain Lai-King's avatar"
+          src="https://www.gravatar.com/avatar/69d0370c58399d0e0bbd15ccabfe1ec5"
+          title="Contributors Romain Lai-King's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Romain Lai-King
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Ryan Graham"
+      >
+        <img
+          alt="Contributors Ryan Graham's avatar"
+          src="https://www.gravatar.com/avatar/8bd1dd86bbf8705a5a702b86a2f3a390"
+          title="Contributors Ryan Graham's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Ryan Graham
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="saheba"
+      >
+        <img
+          alt="Contributors saheba's avatar"
+          src="https://www.gravatar.com/avatar/77644c51856cab149e0f550c5f0c6ed8"
+          title="Contributors saheba's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          saheba
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Sam Day"
+      >
+        <img
+          alt="Contributors Sam Day's avatar"
+          src="https://www.gravatar.com/avatar/1886554b0562a0eeeb78a4d1f27917ea"
+          title="Contributors Sam Day's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Sam Day
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="steve-p-com"
+      >
+        <img
+          alt="Contributors steve-p-com's avatar"
+          src="https://www.gravatar.com/avatar/bef1821d3036b8b9242c4999826c1c3c"
+          title="Contributors steve-p-com's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          steve-p-com
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Tarun Garg"
+      >
+        <img
+          alt="Contributors Tarun Garg's avatar"
+          src="https://www.gravatar.com/avatar/185e200c3451cfbe341f0e758626303a"
+          title="Contributors Tarun Garg's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Tarun Garg
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Thomas Cort"
+      >
+        <img
+          alt="Contributors Thomas Cort's avatar"
+          src="https://www.gravatar.com/avatar/120d2921c33c1bd8dedfce67a28dcc63"
+          title="Contributors Thomas Cort's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Thomas Cort
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Tom Vincent"
+      >
+        <img
+          alt="Contributors Tom Vincent's avatar"
+          src="https://www.gravatar.com/avatar/fb0c7faeda7f5d5632182a3d80381bfa"
+          title="Contributors Tom Vincent's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Tom Vincent
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Trent Earl"
+      >
+        <img
+          alt="Contributors Trent Earl's avatar"
+          src="https://www.gravatar.com/avatar/1e30abe66d21824b89c28d05e5b57d84"
+          title="Contributors Trent Earl's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Trent Earl
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="trent.earl"
+      >
+        <img
+          alt="Contributors trent.earl's avatar"
+          src="https://www.gravatar.com/avatar/f84b8ae496f7c988dce5a71d773e75bb"
+          title="Contributors trent.earl's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          trent.earl
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="User NPM @nickname"
+      >
+        <img
+          alt="Contributors User NPM @nickname's avatar"
+          src="https://www.gravatar.com/avatar/fba48015a688c38cc84e5b55b07858c0"
+          title="Contributors User NPM @nickname's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          User NPM @nickname
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Yannick Croissant"
+      >
+        <img
+          alt="Contributors Yannick Croissant's avatar"
+          src="https://www.gravatar.com/avatar/1e619ddb2a180222dd3d9f0348e65b9b"
+          title="Contributors Yannick Croissant's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Yannick Croissant
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Yannick Galatol"
+      >
+        <img
+          alt="Contributors Yannick Galatol's avatar"
+          src="https://www.gravatar.com/avatar/2f624f92326fef845bb2c07b392b7e48"
+          title="Contributors Yannick Galatol's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Yannick Galatol
+        </span>
+      </div>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`<PackageSidebar /> : <Maintainers /> should match with the props 1`] = `
+<div
+  class="module maintainersModule"
+>
+  <h2
+    class="moduleTitle"
+  >
+    Maintainers (68)
+  </h2>
+  <div>
+    <ul
+      class="maintainer-author"
+    >
+      <div
+        class="maintainer"
+        title="User NPM"
+      >
+        <img
+          alt="Author User NPM's avatar"
+          src="https://www.gravatar.com/avatar/a5a236ba477ee98908600c40cda74f4a"
+          title="Author User NPM's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          User NPM
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="030"
+      >
+        <img
+          alt="Contributors 030's avatar"
+          src="https://www.gravatar.com/avatar/4ef03c2bf8d8689527903212d96fb45b"
+          title="Contributors 030's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          030
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alex Vernacchia"
+      >
+        <img
+          alt="Contributors Alex Vernacchia's avatar"
+          src="https://www.gravatar.com/avatar/06975001f7f2be7052bcf978700c6112"
+          title="Contributors Alex Vernacchia's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alex Vernacchia
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alexander Makarenko"
+      >
+        <img
+          alt="Contributors Alexander Makarenko's avatar"
+          src="https://www.gravatar.com/avatar/d9acfc4ed4e49a436738ff26a722dce4"
+          title="Contributors Alexander Makarenko's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alexander Makarenko
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Alexandre-io"
+      >
+        <img
+          alt="Contributors Alexandre-io's avatar"
+          src="https://www.gravatar.com/avatar/2e095c7cfd278f72825d0fed6e12e3b1"
+          title="Contributors Alexandre-io's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Alexandre-io
+        </span>
+      </div>
+      <div
+        class="maintainer"
+        title="Aram Drevekenin"
+      >
+        <img
+          alt="Contributors Aram Drevekenin's avatar"
+          src="https://www.gravatar.com/avatar/371edff6d79c39bb9e36bde39d41a4b0"
+          title="Contributors Aram Drevekenin's avatar"
+        />
+        <span
+          class="maintainer-name"
+        >
+          Aram Drevekenin
+        </span>
+      </div>
+    </ul>
+    <button
+      class="showAllContributors"
+      title="Show all 68 contributors"
+    >
+      Show all
+    </button>
+  </div>
+</div>
+`;

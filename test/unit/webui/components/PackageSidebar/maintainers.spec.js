@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import { mount } from 'enzyme';
-import Maintainers from '../../../../../src/webui/src/components/PackageSidebar/modules/Maintainers/index';
+import { shallow } from 'enzyme';
+import Maintainers from '../../../../../src/webui/src/components/PackageSidebar/modules/Maintainers';
 import { packageMeta } from '../store/packageMeta';
 
 console.error = jest.fn();
@@ -14,13 +14,13 @@ describe('<PackageSidebar /> : <Maintainers />', () => {
   let instance;
 
   beforeEach(() => {
-    wrapper = mount(<Maintainers packageMeta={packageMeta} />);
+    wrapper = shallow(<Maintainers packageMeta={packageMeta} />);
     instance = wrapper.instance();
   });
 
   it('should match with the props', () => {
-    expect(wrapper.props().packageMeta).toEqual(packageMeta);
-    expect(wrapper.html()).toMatchSnapshot();
+    expect(wrapper.instance().props.packageMeta).toEqual(packageMeta);
+    expect(wrapper.render()).toMatchSnapshot();
   });
 
   it('author shoule be equal to User NPM', () => {
@@ -69,11 +69,12 @@ describe('<PackageSidebar /> : <Maintainers />', () => {
         name: 'Aram Drevekenin'
       }
     ];
-    expect(instance.uniqueContributors).toEqual(result);
+    expect(instance.shortContributorList).toEqual(result);
   });
 
   it('should click on handleShowAllContributors', () => {
     wrapper.find('button').simulate('click');
     expect(wrapper.state('showAllContributors')).toBeTruthy();
+    expect(wrapper.render()).toMatchSnapshot();
   });
 });

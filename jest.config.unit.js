@@ -46,5 +46,6 @@ module.exports = {
   },
   transformIgnorePatterns: [
     '<rootDir>/node_modules/(?!react-syntax-highlighter)'
-  ]
+  ],
+  snapshotSerializers: ['enzyme-to-json/serializer']
 };
