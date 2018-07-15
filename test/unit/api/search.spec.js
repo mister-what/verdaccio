@@ -34,10 +34,10 @@ let packages = [
 
 describe('search', () => {
 	beforeAll(async function() {
-		let config = new Config(config_hash);
-		this.storage = new Storage(config);
-		await this.storage.init(config);
-		Search.configureStorage(this.storage);
+		const config = new Config(config_hash);
+		const storage = new Storage(config);
+		await storage.init(config);
+		Search.configureStorage(storage);
 		packages.map(function(item) {
 			Search.add(item);
 		});

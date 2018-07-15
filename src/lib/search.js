@@ -14,7 +14,7 @@ class Search implements IWebSearch {
    * Constructor.
    */
   constructor() {
-    /* eslint no-invalid-this: "off" */
+    /* eslint babel/no-invalid-this: "off" */
     this.index = lunr(function() {
       this.field('name', {boost: 10});
       this.field('description', {boost: 4});

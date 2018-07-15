@@ -59,11 +59,6 @@ const checkDefaultConfPackages = (config) => {
 };
 
 describe('Config file', () => {
-  beforeAll(function() {
-
-    this.config = new Config(parseConfigFile(resolveConf('full')));
-  });
-
   describe('Config file', () => {
     test('parse full.yaml', () => {
       const config = new Config(parseConfigFile(resolveConf('full')));
